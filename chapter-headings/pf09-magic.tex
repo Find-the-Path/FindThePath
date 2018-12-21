@@ -73,19 +73,38 @@ If the spell interferes with you or distracts you in some other way, the DC is t
 				
 \subsection{Counterspells}
 
+
+It is possible to cast any spell as a counterspell. By doing so, you are using the spell's energy to disrupt the casting of the same
+spell by another character. Counterspelling works even if one spell is divine and the other arcane.
 				
-It is possible to cast any spell as a counterspell. By doing so, you are using the spell's energy to disrupt the casting of the same spell by another character. Counterspelling works even if one spell is divine and the other arcane.
-				
-\textbf{How Counterspells Work}: To use a counterspell, you must select an opponent as the target of the counterspell. You do this by choosing to ready an action. In doing so, you elect to wait to complete your action until your opponent tries to cast a spell. You may still move at your normal speed, since ready is a standard action.
-				
-If the target of your counterspell tries to cast a spell, make a Spellcraft check (DC 15 + the spell's level). This check is a free action. If the check succeeds, you correctly identify the opponent's spell and can attempt to counter it. If the check fails, you can't do either of these things.
-				
-To complete the action, you must then cast an appropriate spell. As a general rule, a spell can only counter itself. If you are able to cast the same spell and you have it prepared (or have a slot of the appropriate level available), you cast it, creating a counterspell effect. If the target is within range, both spells automatically negate each other with no other results.
-				
+\textbf{How Counterspells Work}: To use a counterspell, you must select an opponent as the target of the counterspell. You do this by
+choosing to ready an action. In doing so, you elect to wait to complete your action until your opponent tries to cast a spell. You
+may still move at your normal speed, since ready is a standard action.
+
+If the target of your counterspell tries to cast a spell, make a Spellcraft check (DC 15 + the spell's level). This check is a free
+action. If the check succeeds, you correctly identify the opponent's spell and can attempt to counter it. If the check fails, you
+can't do either of these things.
+
+\begin{formal}
+ Counterspells are also very often misinterpreted. In Pathfinder, the following is required to successfully counter a spell:
+ \begin{itemize}
+  \item You must have a counterspell readied
+  \item You must identify the spell being cast (Spellcraft, DC=15+spell level with distance penalty)
+  \item You must have the spell either on your spells known or prepared
+  \item The target of the spell must be within range (this makes countering Personal-range spells impossible, and countering
+      touch-range spells highly unlikely).
+ \end{itemize}
+ In my time playing Pathfinder, this has only correctly happened once. (It has happened incorrectly several times, where someone
+ attempts to counter a \textit{Darkness} spell without meeting the ``range:'' touch requirement). \\
+ Because this is complex and unintuitive, it's better to just remove the range requirement.
+\end{formal}
+
+To complete the action, you must then cast an appropriate spell. As a general rule, a spell can only counter itself. If you are able
+to cast the same spell and you have it prepared (or have a slot of the appropriate level available), you create a 
+counterspell effect and both spells automatically negate each other with no other results.
+
 \textbf{Counterspelling Metamagic Spells}: Metamagic feats are not taken into account when determining whether a spell can be countered.
-				
-\textbf{Specific Exceptions}: Some spells can counter other specific spells, often those with diametrically opposed effects.
-				
+
 \textbf{\textit{Dispel Magic } as a Counterspell}: You can usually use \textit{dispel magic }to counterspell another spell being cast without needing to identify the spell being cast. \textit{Dispel magic }doesn't always work as a counterspell (see the spell description).
 				
 \subsection{Caster Level}
@@ -130,23 +149,29 @@ When a living creature dies, its soul departs its body, leaves the Material Plan
 				
 \subsection{Combining Magic Effects}
 
-				
+
 Spells or magical effects usually work as described, no matter how many other spells or magical effects happen to be operating in the same area or on the same recipient. Except in special cases, a spell does not affect the way another spell operates. Whenever a spell has a specific effect on other spells, the spell description explains that effect. Several other general rules apply when spells or magical effects operate in the same place:
-				
+
 \textbf{Stacking Effects}: Spells that provide bonuses or penalties on attack rolls, damage rolls, saving throws, and other attributes usually do not stack with themselves. More generally, two bonuses of the same type don't stack even if they come from different spells (or from effects other than spells; see Bonus Types, above). 
-				
+
 \textit{Different Bonus Types}: The bonuses or penalties from two different spells stack if the modifiers are of different types. A bonus that doesn't have a type stacks with any bonus.
-				
+
 \textit{Same Effect More than Once in Different Strengths}: In cases when two or more identical spells are operating in the same area or on the same target, but at different strengths, only the one with the highest strength applies.
-				
+
 \textit{Same Effect with Differing Results}: The same spell can sometimes produce varying effects if applied to the same recipient more than once. Usually the last spell in the series trumps the others. None of the previous spells are actually removed or dispelled, but their effects become irrelevant while the final spell in the series lasts.
-				
+
 \textit{One Effect Makes Another Irrelevant}: Sometimes, one spell can render a later spell irrelevant. Both spells are still active, but one has rendered the other useless in some fashion.
-				
+
 \textit{Multiple Mental Control Effects}: Sometimes magical effects that establish mental control render each other irrelevant, such as spells that remove the subject's ability to act. Mental controls that don't remove the recipient's ability to act usually do not interfere with each other. If a creature is under the mental control of two or more creatures, it tends to obey each to the best of its ability, and to the extent of the control each effect allows. If the controlled creature receives conflicting orders simultaneously, the competing controllers must make opposed Charisma checks to determine which one the creature obeys.
-				
-\textbf{Spells with Opposite Effects}: Spells with opposite effects apply normally, with all bonuses, penalties, or changes accruing in the order that they apply. Some spells negate or counter each other. This is a special effect that is noted in a spell's description. 
-				
+
+\begin{formal}
+ \textbf{What happened to \textit{Bless} counters and dispels \textit{Bane}}? \\
+ The ``Counters and Dispels'' language is a source of much confusion. As most effects that are subject to this sort of thing are
+ already counteract each other (eg. Bless gives +1, Bane gives -1), it's best to just allow them to overlap.
+\end{formal}
+
+\textbf{Spells with Opposite Effects}: Spells with opposite effects apply normally, with all bonuses, penalties, or changes accruing in the order that they apply.
+
 \textbf{Instantaneous Effects}: Two or more spells with instantaneous durations work cumulatively when they affect the same target.
 				
 \section{Spell Descriptions}
@@ -226,6 +251,30 @@ All enchantments are mind-affecting spells. Two subschools of enchantment spells
 
 				
 Evocation spells manipulate magical energy or tap an unseen source of power to produce a desired end. In effect, an evocation draws upon magic to create something out of nothing. Many of these spells produce spectacular effects, and evocation spells can deal large amounts of damage.
+
+\subsubsection{Light and Darkness}
+\begin{formal}
+ Very few rules have been debated with such fervour and such vigour as the Light vs Darkness rules. This is because of a lot of
+ weird terminology, combined with the horribly misleading Counters and Dispels language (which is also to be removed).\\
+ For a given square:
+ \begin{itemize}
+  \item Ambient light is defined as light from a ``natural'' source. Typically the sun (bright light) or the moon (dim light). Black-body
+      radiation from a lava flow would also count.
+  \item All spells of the highest spell level take effect. All lower-level effects are ignored.
+ \end{itemize}
+ 
+ Examples: \\
+ If Ambient is ``Darkness'', and \textit{Continual Flame} (level 2) is in the area of the \textit{Darkness} spell, the 
+ \textit{Continual Flame} spell will increase the lighting level to ``Normal''. Then the \textit{Darkness} spell will drop it one
+ level, to ``Dim''. \\
+ If instead, the \textit{Continual Flame} is Cleric-cast (level 3), the \textit{Darkness} spell will have no effect, yielding ``normal''
+ lighting conditions. \\
+ If the 3rd-level \textit{Continual Flame} is in the same area as a \textit{Deeper Darkness} spell, they will again both have an effect,
+ resulting in ``Darkness'' (but not ``Supernatural Darkness'').\\
+ Whether the \textit{Daylight Special Negation Clause} should take effect is still up in the air.
+\end{formal}
+
+
 				
 \subsection{Illusion}
 
